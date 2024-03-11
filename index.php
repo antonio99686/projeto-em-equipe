@@ -50,6 +50,9 @@ echo "<a href='logout.php' class='btn btn-danger'>Sair</a>";
 
 
 <div class="barra">
+    <h4>cadastrar</h4>
+     <a href="formcad.php">cadastrar</a>
+     
 
 
 
