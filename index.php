@@ -18,7 +18,7 @@ session_start();
 
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-<a class="navbar-brand"> Sentinela</a>
+<a class="navbar-brand"> estoque</a>
 <?php
 include("conexao.php");
 $sql = "SELECT * FROM produto";
