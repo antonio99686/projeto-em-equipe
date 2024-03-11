@@ -42,25 +42,40 @@ $dados = mysqli_fetch_assoc($resultado);
 
  
  //Lista os itens
- echo '<div class="table">
-   <table>
-     <tr>
-       <th scope="col">Nome</th>
-       <th scope="col">Quantidade</th>
-       <th scope="col">Valor</th>
-      
  
-     </tr>';
  
- while ($dados = mysqli_fetch_assoc($resultado)) {
+ while ($dados = mysqli_fetch_assoc($resultado)) {?>
        
-       echo "<td>" .  $dados['nome']         .  "</td>";
-       echo "<td>" .  $dados['quantidade']        .  "</td>";
-       echo "<td>" .  $dados['valor']        .  "</td>";
-      
-       echo '</tr>';
-       echo "<td><a href='formedit.php?" . "&nome=".$dados['nome']."&quantidade=".$dados['quantidade']."&valor=".$dados['valor']."'>"."<img src='icon/edit.png' 'widht='20' height='20'"."</a>";
-       echo "<td><a href='exclui.php?" . "&nome=".$dados['nome']."&quantidade=".$dados['quantidade']."&valor=".$dados['valor']."'>"."<img src='icon/lixo.png' 'widht='20' height='20'"."</a>";
+    <table class="ui selectable inverted table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th class="right aligned">QUANTIDADE</th>
+        <th class="right aligned">VALOR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Aprovado</td>
+        <td class="right aligned">None</td>
+      </tr>
+      <tr>
+        <td>Jamie</td>
+        <td>Aprovado</td>
+        <td class="right aligned">Requer chamada</td>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Denied</td>
+        <td class="right aligned">None</td>
+      </tr>
+    </tbody>
+  </table>
+  <?php
+       echo "<td><a href='formedit.php?" . "&id_produto=".$dados['id_produto'] . "&nome=".$dados['nome']."&quantidade=".$dados['quantidade']."&valor=".$dados['valor']."'>"."<img src='icon/edit.png' 'widht='20' height='20'"."</a>";
+       echo "<td><a href='exclui.php?" . "&id_produto=".$dados['id_produto'] . "&nome=".$dados['nome']."&quantidade=".$dados['quantidade']."&valor=".$dados['valor']."'>"."<img src='icon/lixo.png' 'widht='20' height='20'"."</a>";
        
  
  }
