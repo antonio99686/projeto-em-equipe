@@ -6,7 +6,6 @@ $nome =  $_GET['nome'];
 $qnt = $_GET['quantidade'];
 $valor = $_GET['valor'];
 
-
 //cadastra no banco
 $sql = "UPDATE produto SET  nome = '$nome', quantidade = '$qnt', valor = '$valor',
 WHERE id_produto ='$id'";
