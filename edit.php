@@ -2,7 +2,7 @@
 //conecta ao banco de dado
 include('conexao.php');
 
-$usuario =  $_GET['nome'];
+$nome =  $_GET['nome'];
 $qnt = $_GET['quantidade'];
 $valor = $_GET['valor'];
 
