@@ -22,7 +22,7 @@
                             <h3>Cadastre-se</h3>
                         </div>
                         <div class="card-body">
-                            <form action="cadastrar.php" method="GET" enctype="multipart/form-data">
+                            <form action="crud/cadastrar.php" method="GET" enctype="multipart/form-data">
                         <div>
                         <div class="mb-3">
                             <label>nome</label>
