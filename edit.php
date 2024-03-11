@@ -2,15 +2,14 @@
 //conecta ao banco de dado
 include('conexao.php');
 
-$usuario =  $_POST['nome'];
-$senha = $_POST['senha'];
-$email = $_POST['email'];
-$id =  $_POST['id_usuario'];
+$usuario =  $_GET['nome'];
+$qnt = $_GET['quantidade'];
+$valor = $_GET['valor'];
 
 
 //cadastra no banco
-$sql = "UPDATE usuario SET  email = '$email', senha = '$senha' 
-WHERE nome ='$usuario'";
+$sql = "UPDATE produto SET  nome = '$nome', quantidade = '$qnt', valor = '$valor',
+WHERE id_produto ='$id'";
 
 if (mysqli_query($conexao, $sql)){
   echo "Arquivo enviado com sucesso!";

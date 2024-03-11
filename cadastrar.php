@@ -6,8 +6,8 @@ include('conexao.php');
 
 //dados do formulario
 $usuario =  $_GET['nome'];
-$senha = $_POST['senha'];
-$email = $_POST['email'];
+$senha = $_GET['senha'];
+$email = $_GET['email'];
 
 
 
