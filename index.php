@@ -56,7 +56,7 @@ $dados = mysqli_fetch_assoc($resultado);
        
        echo "<td>" .  $dados['nome']         .  "</td>";
        echo "<td>" .  $dados['quantidade']        .  "</td>";
-       echo "<td>" .  $dados['Valor']        .  "</td>";
+       echo "<td>" .  $dados['valor']        .  "</td>";
       
        echo '</tr>';
        echo "<td><a href='formedit.php?" . "&nome=".$dados['nome']."&quantidade=".$dados['quantidade']."&valor=".$dados['valor']."'>"."<img src='icon/edit.png' 'widht='20' height='20'"."</a>";
