@@ -1,9 +1,6 @@
 <?php
 session_start();
-if(empty($_SESSION)){
-echo"<script>location.hrfe='index.php';</script>";
 
-} 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -21,7 +18,7 @@ echo"<script>location.hrfe='index.php';</script>";
 
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-<a class="navbar-brand"> Sentinela da Fronteira</a>
+<a class="navbar-brand"> Sentinela</a>
 <?php
 include("conexao.php");
 $sql = "SELECT * FROM produto";

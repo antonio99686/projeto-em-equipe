@@ -2,10 +2,10 @@
 //conecta ao banco de dado
 include('conexao.php');
 
-$usuario =  $_POST['nome'];
-$senha = $_POST['senha'];
-$email = $_POST['email'];
-$id =  $_POST['id_usuario'];
+$usuario =  $_GET['nome'];
+$senha = $_GET['senha'];
+$email = $_GET['email'];
+$id =  $_GET['id_usuario'];
 
 
 //cadastra no banco
