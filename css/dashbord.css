@@ -7,7 +7,7 @@
 .perfil {
    margin-top: 5%;
    position: relative;
-   margin-left: 15%;
+   margin-left: 7%;
    width: 40%;
    padding: 1%;
 
@@ -55,6 +55,21 @@ h1{
 }
 
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #c3dfff;
+}
+tr:hover {background-color: #21dbdb;}
 
 
          
