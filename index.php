@@ -37,8 +37,16 @@ echo "<a href='logout.php' class='btn btn-danger'>Sair</a>";
 <div class="posisao">
   <?php
  
- echo"Nome:";
+ echo"Nome: ";
  echo $dados["nome"];
+ echo"<br>";
+
+ echo"quantidade: ";
+ echo $dados["quantidade"];
+ echo"<br>";
+
+ echo"valor: ";
+ echo $dados["valor"];
  echo"<br>";
  
  
@@ -50,8 +58,12 @@ echo "<a href='logout.php' class='btn btn-danger'>Sair</a>";
 
 
 <div class="barra">
-    <h1>Opção</h1>
-     <a href="formcad.php">cadastrar</a>
+    <h3>Opção</h3>
+      Cadastrar  <a href="formcad.php"></a>
+      <br>
+      Editar     <a href="formcad.php"></a>
+      <br>
+      Excluir    <a href="formcad.php"></a>
      
 
 

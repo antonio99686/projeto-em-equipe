@@ -7,7 +7,7 @@
 .perfil {
    margin-top: 5%;
    position: relative;
-   margin-left: 32%;
+   margin-left: 15%;
    width: 40%;
    padding: 1%;
 
@@ -45,14 +45,16 @@ h1{
  
 .barra{
   border-radius: 5px;
-   box-shadow: 7px 4px 13px 0px rgb(0, 0, 0);
+ 
    margin: 5%;
    width: 15%;
    position: relative;
-   left: 50%;
-   margin-top: 5%;
+   left: 55%;
+   margin-top: -7%;
 
 }
+
+
 
 
          
