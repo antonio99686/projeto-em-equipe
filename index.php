@@ -59,11 +59,16 @@ echo "<a href='logout.php' class='btn btn-danger'>Sair</a>";
 
 <div class="barra">
     <h3>Opção</h3>
-      Cadastrar  <a href="formcad.php"></a>
+      Cadastrar  <a href="formcad.php">
+      <img src="icon/" width="100px" height="125px"></a>
       <br>
-      Editar     <a href="formcad.php"></a>
+      Editar     <a href="formedit.php">
+      <img src="icon/edit.png" width="100px" height="125px">
+      </a>
       <br>
-      Excluir    <a href="formcad.php"></a>
+      Excluir    <a href="exclui.php">
+      <img src="icon/lixo.png" width="100px" height="125px">
+      </a>
      
 
 
