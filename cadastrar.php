@@ -17,7 +17,7 @@ $sql = "INSERT INTO produto(
      quantidade,
      valor)
  VALUES 
- ('$usuario','$email','$senha')";
+ ('$nome','$qtd','$valor')";
 
 // Executar o comando SQL
 if (mysqli_query($conexao, $sql)){
