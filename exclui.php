@@ -1,11 +1,10 @@
 <?php
 include("conexao.php");
 
-$id = $_POST['id'];
+$id = $_GET['id_produto'];
 
 
-//define a pasta para onde enviaremos o arquivo
-$diretorio = "img/";
+
 
 $sql = "SELECT * FROM usuario WHERE id = $id";
 $resultado = mysqli_query($conexao, $sql);
