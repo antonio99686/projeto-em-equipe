@@ -19,10 +19,10 @@
                 <div class="col-lg-4 offset-lg-4">
                     <div class="card">
                         <div class="card-body">
-                            <h3>Cadastre-se</h3>
+                            <h3>Editar</h3>
                         </div>
                         <div class="card-body">
-                            <form action="edit.php" method="POST" enctype="multipart/form-data">
+                            <form action="cadastrar.php" method="POST" enctype="multipart/form-data">
                         <div>
                         <div class="mb-3">
                             <label>Nome completo</label>
