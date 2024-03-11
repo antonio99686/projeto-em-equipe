@@ -5,19 +5,19 @@ include('conexao.php');
 
 
 //dados do formulario
-$usuario =  $_GET['nome'];
-$senha = $_GET['senha'];
-$email = $_GET['email'];
+$nome =  $_GET['nome'];
+$qtd = $_GET['qtd'];
+$valor = $_GET['valor'];
 
 
 
 //cadastramento no banco
-$sql = "INSERT INTO usuario(
+$sql = "INSERT INTO produto(
   nome,
-     email,
-     senha)
+     quantidade,
+     valor)
  VALUES 
- ('$usuario','$email','$senha')";
+ ('$nome','$qtd','$valor')";
 
 // Executar o comando SQL
 if (mysqli_query($conexao, $sql)){
