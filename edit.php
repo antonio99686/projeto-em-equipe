@@ -9,7 +9,7 @@ $id =  $_GET['id_usuario'];
 
 
 //cadastra no banco
-$sql = "UPDATE usuario SET  email = '$email', senha = '$senha' 
+$sql = "UPDATE usuario SET  = '$email', senha = '$senha' 
 WHERE nome ='$usuario'";
 
 if (mysqli_query($conexao, $sql)){
