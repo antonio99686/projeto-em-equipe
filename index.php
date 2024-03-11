@@ -18,7 +18,7 @@ session_start();
 
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-<a class="navbar-brand"> Sentinela</a>
+<a class="navbar-brand"> estoque</a>
 <?php
 include("conexao.php");
 $sql = "SELECT * FROM produto";
@@ -60,7 +60,7 @@ echo "<a href='logout.php' class='btn btn-danger'>Sair</a>";
 <div class="barra">
     <h3>Opção</h3>
       Cadastrar  <a href="formcad.php">
-      <img src="icon/" width="100px" height="125px"></a>
+      <img src="icon/cad.png" width="95px" height="100px"></a>
       <br>
       Editar     <a href="formedit.php">
       <img src="icon/edit.png" width="100px" height="125px">
