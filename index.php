@@ -37,8 +37,16 @@ echo "<a href='logout.php' class='btn btn-danger'>Sair</a>";
 <div class="posisao">
   <?php
  
- echo"Nome:";
+ echo"Nome: ";
  echo $dados["nome"];
+ echo"<br>";
+
+ echo"quantidade: ";
+ echo $dados["quantidade"];
+ echo"<br>";
+
+ echo"valor: ";
+ echo $dados["valor"];
  echo"<br>";
  
  
