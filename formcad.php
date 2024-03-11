@@ -22,25 +22,25 @@
                             <h3>Cadastre-se</h3>
                         </div>
                         <div class="card-body">
-                            <form action="edit.php" method="POST" enctype="multipart/form-data">
+                            <form action="cadastrar.php" method="GET" enctype="multipart/form-data">
                         <div>
                         <div class="mb-3">
-                            <label>Nome completo</label>
+                            <label>nome</label>
                             <input type="text" name="nome"
                              class="form-control">
                         </div>
                     </div>
                     <div>
                         <div class="mb-3">
-                            <label>Senha</label>
-                            <input type="password" name="senha" 
+                            <label>quantidade</label>
+                            <input type="text" name="quantidade"
                             class="form-control">
                         </div>
                     </div>
                     <div>
                         <div class="mb-3">
-                            <label>E-mail</label>
-                            <input type="email" name="email" 
+                            <label>valor</label>
+                            <input type="text" name="valor" 
                             class="form-control">
                         </div>
                     </div>
