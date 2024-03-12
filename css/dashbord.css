@@ -7,9 +7,9 @@
 .perfil {
    margin-top: 5%;
    position: relative;
-   margin-left: 7%;
+   margin-left: 2%;
    width: 40%;
-   padding: 1%;
+   padding: auto;
 
 
 }
@@ -62,7 +62,7 @@ h1{
 
   td, th {
     text-align: left;
-    padding: 8px;
+    padding: 5px;
   }
 
   tr:nth-child(even) {
