@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashbord.css">
     <link rel="shortcut icon" href="img/logo.png">
-    <title>MERCADO ESTOQUE</title>
+    <title>sistema</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
@@ -18,13 +18,14 @@ session_start();
 
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-<a class="navbar-brand"> ESTOQUE</a>
+<a class="navbar-brand"> estoque</a>
 <?php
 include("conexao.php");
 $sql = "SELECT * FROM produto";
 $resultado = mysqli_query($conexao, $sql);
 $dados = mysqli_fetch_assoc($resultado);
 
+echo "<a href='logout.php' class='btn btn-danger'>Sair</a>";
 ?>
     </div>
 
@@ -34,13 +35,21 @@ $dados = mysqli_fetch_assoc($resultado);
 <h3>Dados</h3>
 
 <div class="posisao">
-  
+  <?php
  
- <?php
- 
- 
+ echo"Nome: ";
+ echo $dados["nome"];
+ echo"<br>";
 
+ echo"quantidade: ";
+ echo $dados["quantidade"];
+ echo"<br>";
+
+ echo"valor: ";
+ echo $dados["valor"];
+ echo"<br>";
  
+<<<<<<< HEAD
  //Lista os itens
  
  
@@ -77,16 +86,12 @@ $dados = mysqli_fetch_assoc($resultado);
        echo "<td><a href='formedit.php?" . "&id_produto=".$dados['id_produto'] . "&nome=".$dados['nome']."&quantidade=".$dados['quantidade']."&valor=".$dados['valor']."'>"."<img src='icon/edit.png' 'widht='20' height='20'"."</a>";
        echo "<td><a href='exclui.php?" . "&id_produto=".$dados['id_produto'] . "&nome=".$dados['nome']."&quantidade=".$dados['quantidade']."&valor=".$dados['valor']."'>"."<img src='icon/lixo.png' 'widht='20' height='20'"."</a>";
        
+=======
  
- }
- echo '</table>
- </div>';
+ 
+>>>>>>> 48cee01e2a75c10864860337245783e88fb0549d
+ 
  ?>
- 
- 
- 
- 
- 
  </div>
 </div>
 
@@ -94,9 +99,16 @@ $dados = mysqli_fetch_assoc($resultado);
 <div class="barra">
     <h3>Opção</h3>
       Cadastrar  <a href="formcad.php">
-      <img src="icon/cad.png" width="95px" height="100px"></a>
+      <img src="icon/cad.png" width="14px" height="14px"></a>
       <br>
-      
+      Editar     <a href="formedit.php">
+      <img src="icon/edit.png" width="14px" height="14px">
+      </a>
+      <br>
+      Excluir    <a href="exclui.php">
+      <img src="icon/lixo.png" width= "14px" height="14px">
+      </a>
+     
 
 
 
