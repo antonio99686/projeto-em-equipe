@@ -55,24 +55,24 @@ h1{
 }
 
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-td, th {
-  text-align: left;
-  padding: 8px;
-}
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
 
-tr:nth-child(even) {
-  background-color: #c3dfff;
-}
-tr:hover {background-color: #21dbdb;}
+  tr:nth-child(even) {
+    background-color: #c3dfff;
+  }
+  tr:hover {background-color: #21dbdb;}
 
 
-         
+          
+          
         
-       
       
