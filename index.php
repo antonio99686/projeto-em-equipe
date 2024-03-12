@@ -54,13 +54,13 @@ $dados = mysqli_fetch_assoc($resultado);
      </tr>';
  
  while ($dados = mysqli_fetch_assoc($resultado)) {
-       echo"<tr>";
+     
        echo "<td>" .  $dados['id_produto']         .  "</td>";
        echo "<td>" .  $dados['nome']         .  "</td>";
        echo "<td>" .  $dados['quantidade']        .  "</td>";
        echo "<td>" .  $dados['valor']        .  "</td>";
       
-       echo '</tr>';
+       
        echo "<td><a href='formedit.php?" . "&id_produto=".$dados['id_produto'] . "&nome=".$dados['nome']."&quantidade=".$dados['quantidade']."&valor=".$dados['valor']."'>"."<img src='icon/edit.png' 'widht='20' height='20'"."</a>";
        echo "<td><a href='exclui.php?" . "&id_produto=".$dados['id_produto'] . "&nome=".$dados['nome']."&quantidade=".$dados['quantidade']."&valor=".$dados['valor']."'>"."<img src='icon/lixo.png' 'widht='20' height='20'"."</a>";
        
