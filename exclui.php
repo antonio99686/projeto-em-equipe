@@ -3,11 +3,11 @@ include("conexao.php");
 
 $id = $_GET['id_produto'];
 
-$sql = "DELETE * FROM produto WHERE id_produto = $id";
+$sql = "SELECT * FROM produto WHERE id_produto=$id";
 $resultado = mysqli_query($conexao, $sql);
-$lista = mysqli_fetch_assoc($resultado);
+$escolhas = mysqli_fetch_assoc($resultado);
 
-
+$sql = "DELETE FROM produto WHERE id_produto = $id";
 mysqli_query($conexao, $sql);
 
 
