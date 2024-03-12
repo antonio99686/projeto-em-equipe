@@ -6,8 +6,9 @@ $nome =  $_GET['nome'];
 $qnt = $_GET['quantidade'];
 $valor = $_GET['valor'];
 
+
 //cadastra no banco
-$sql = "UPDATE produto SET   quantidade = '$qnt', valor = '$valor',
+$sql = "UPDATE produto SET   quantidade = '$qnt', valor = '$valor'
 WHERE nome = '$nome'";
 
 if (mysqli_query($conexao, $sql)){

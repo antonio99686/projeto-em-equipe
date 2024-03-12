@@ -54,7 +54,7 @@ $dados = mysqli_fetch_assoc($resultado);
      </tr>';
  
  while ($dados = mysqli_fetch_assoc($resultado)) {
-     
+       echo"<tr>";
        echo "<td>" .  $dados['id_produto']         .  "</td>";
        echo "<td>" .  $dados['nome']         .  "</td>";
        echo "<td>" .  $dados['quantidade']        .  "</td>";
