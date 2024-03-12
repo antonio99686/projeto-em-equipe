@@ -81,7 +81,7 @@ $dados = mysqli_fetch_assoc($resultado);
 <div class="barra">
     <h3>Opção</h3>
       Cadastrar  <a href="formcad.php">
-      <img src="icon/cad.png" width="95px" height="100px"></a>
+      <img src="icon/cad.png" width="40px" height="50px"></a>
       <br>
       
 
